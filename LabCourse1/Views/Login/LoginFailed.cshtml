@@ -1,0 +1,23 @@
+﻿@model LabCourse1.Models.UserModel
+
+<div>
+    <h2>The informations below are wrong.</h2>
+    <h4>Printed Information</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+    </dl>
+    <br/>
+    <h2>Failed login</h2>
+</div>
