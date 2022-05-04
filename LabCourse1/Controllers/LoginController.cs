@@ -20,6 +20,15 @@ namespace LabCourse1.Controllers
             {
                 return View("LoginFailed", userModel);
             }
+
+            if (userModel.UserName == "Orhan Bajraktari" && userModel.Password == "12345")
+            {
+                return View("LoginSuccess", userModel);
+            }
+            else
+            {
+                return View("LoginFailed", userModel);
+            }
         }
     }
 }
