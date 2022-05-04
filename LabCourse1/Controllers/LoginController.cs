@@ -12,7 +12,7 @@ namespace LabCourse1.Controllers
 
         public IActionResult ProcessLogin(UserModel userModel)
         {
-            if (userModel.UserName == "Erblin Gashi" && userModel.Password == "12345")
+            if (userModel.UserName == "Erblin Gashi" && userModel.Password == "12345" || userModel.UserName=="Orhan Bajraktari" && userModel.Password == "12345")
             { 
                 return View("LoginSuccess", userModel);
             }
@@ -21,14 +21,6 @@ namespace LabCourse1.Controllers
                 return View("LoginFailed", userModel);
             }
 
-            if (userModel.UserName == "Orhan Bajraktari" && userModel.Password == "12345")
-            {
-                return View("LoginSuccess", userModel);
-            }
-            else
-            {
-                return View("LoginFailed", userModel);
-            }
         }
     }
 }
